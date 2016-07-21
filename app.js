@@ -4,7 +4,7 @@ var express = require('express')
   , app = express()
   , path = require('path')
   , server = require('http').createServer(app)
-  , port = process.env.NODE_ENV.port || 4200
+  , port = process.env.port || 4200
   ;
 
 // Static content.
