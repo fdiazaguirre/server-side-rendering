@@ -40,3 +40,6 @@ jspm_packages
 
 # Exclude IDE fles
 .idea/
+
+# Exclude node_modules
+node_modules/
