@@ -4,7 +4,7 @@
   "description": "Build up your career in three major areas with these handy resources.",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
     "test": "./test-all.sh"
   },
   "repository": {
