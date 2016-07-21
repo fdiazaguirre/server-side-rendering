@@ -1,3 +1,5 @@
+[ ![Codeship Status for fdiazaguirre/portfolio](https://codeship.com/projects/9bcb7e40-31ac-0134-3ff5-3ee38737da6c/status?branch=master)](https://codeship.com/projects/164547)
+
 # This project is meant not only to show my skills, but to help anyone that is looking for a career roadmap.
 
 ## Domain
