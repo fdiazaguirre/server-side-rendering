@@ -43,3 +43,6 @@ jspm_packages
 
 # Exclude node_modules
 node_modules/
+
+# Exclude dev settings
+config/development.json
