@@ -1,6 +1,8 @@
 section
     article
-        header
-            h1= title
-        section
-            p= content
+        if content === 'home'
+            include home
+        else if content === 'about'
+            include about
+        else
+            include article

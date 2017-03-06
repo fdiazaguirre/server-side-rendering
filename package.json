@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Build up your career in three major areas with these handy resources.",
   "main": "index.js",
+  "engines": {
+    "node": "^6.2.0"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "./test-all.sh"
@@ -24,6 +27,9 @@
   },
   "dependencies": {
     "express": "4.14.0",
+    "lodash": "4.17.4",
+    "mongoose": "4.5.8",
+    "path": "^0.12.7",
     "pug": "2.0.0-beta4"
   }
 }
