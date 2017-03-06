@@ -18,7 +18,7 @@ app.locals.pretty = true;
 return require('./routes').create(db).then(function (myRouter) {
   app.use('/', myRouter);
 
-  console.log('Staring server at => ' + config.host + ':' + config.port);
+  console.log('Starting server at => ' + config.host + ':' + config.port);
 
   server.listen(config.port);
 });
