@@ -14,6 +14,10 @@
    */
   module.exports.create = function (mongoose) {
     return require(path.resolve(process.cwd(),'lib' ,'models','article')).create(mongoose).then(function ($articles) {
+      myRouter.get('/', function(req, res) {
+        res.render('main', {content: 'home'});
+      });
+
       myRouter.get('/cs', function (req, res) {
         res.render('main', {article: _.find($articles, { 'title': 'Computer Science'})});
       });
@@ -81,7 +85,6 @@
       myRouter.get('/soft/job', function (req, res) {
         res.render('main', {article: _.find($articles, { 'title': 'Applying for a Job'})});
       });
-
 
       myRouter.get('/home', function(req, res) {
         res.render('main', {content: 'home'});
