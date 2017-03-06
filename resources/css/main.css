@@ -1,0 +1,171 @@
+/*Palette*/
+#MAIN-PALETTE,
+body,
+.main-palette {
+  background-color: #16a085;
+  color: #2c3e50;
+}
+
+/*:hover*/
+.dark-grey-background {background-color: #939393;}
+.white-color {color: #f5f5f5;}
+
+
+/* Using DRY:
+ * @see @link{http://www.slideshare.net/jeremyclarke/wordcamp-nyc-dry-css}
+ */
+
+
+/* top | right | bottom | left
+margin: 2px 1em 0 auto;*/
+
+#CENTER-MIDDLE,
+nav,
+.center-middle {
+  margin: auto;
+  width: 70%;
+}
+
+#SMALL-TEXT,
+footer,
+.small-text {
+  font-family: 'Courier New';
+  font-size: 10px;
+  font-weight: bold;
+  color: #212121;
+}
+
+#SHOW_BOTTOM,
+footer,
+.show-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+#NO-BORDER-NO-OUTLINE,
+.main-menu,
+.nested-menu,
+.no-border-no-outline {
+  border: none;
+  outline: none;
+}
+
+#NO-MARGIN-NO-PADDING,
+.main-menu,
+.main-option:last-child,
+.nested-menu,
+.margin-t0-padding-t0 {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#LIST-STYLE-TYPE,
+.main-menu,
+.nested-menu,
+.list-style-type {
+  list-style-type: none;
+}
+
+#DISPLAY-INLINE-BLOCK,
+.main-option,
+.display-inline-block {
+  display: inline-block;
+}
+
+#NO-DECORATION,
+.option-text,
+.no-decoration {
+  text-decoration: none;
+}
+
+#VERTICAL-ALIGN-MIDDLE,
+.option-text,
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+#FONT-NORMAL,
+.option-text,
+.font-normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+#VERDANA-1EM,
+.option-text,
+.verdana-1em {
+  font-family: Verdana;
+  font-size: 1.2em;
+}
+
+#LIGHT-GREY-BACKGROUND-BLACK-COLOR,
+.main-menu,
+.option-text,
+.light-grey-background-black-color {
+  background: #DDDDDD;
+  color: #111111;
+}
+
+
+#DARK-GREY-BACKGROUND-WHITE-COLOR,
+.option-text:hover,
+.nested-menu > li:hover,
+.nested-menu > li:hover > a,
+.dark-grey-background-white-color {
+  background-color: #939393;
+  color: #f5f5f5;
+}
+
+#TEXT-ALIGN-CENTER,
+.main-option,
+.text-align-center {
+  text-align: center;
+}
+
+#CENTER-MIDDLE,
+.main-menu,
+.center-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#FLEX-1-1-AUTO,
+.main-option,
+.flex-1-1-auto {
+  flex: 1 1 auto;
+}
+
+.textarea-centered {
+
+}
+
+
+/*Sub menu settings are too specific to reuse*/
+.nested-menu {
+  min-width: 15%; /* Set width of the dropdown */
+  position: absolute;
+  display: none;
+  z-index: 999;
+  margin-left: 1.8em;
+  font-size: 0.8em;
+
+  -webkit-transition: opacity .25s ease .1s;
+  -moz-transition: opacity .25s ease .1s;
+  -o-transition: opacity .25s ease .1s;
+  -ms-transition: opacity .25s ease .1s;
+  transition: opacity .25s ease .1s;
+}
+
+.main-option:hover .nested-menu {
+  display: block;
+  background-color: #DDDDDD;
+}
+
+.main-option:hover .nested-menu  li {
+  display: block;
+  text-align: left;
+  margin-left: 0.2em;
+}
+
+

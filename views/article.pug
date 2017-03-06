@@ -1,0 +1,13 @@
+// Iterate over articles create
+h3 #{article.title}
+h5 #{article.subtitle}
+    - var arr = article.content || []
+    each text in arr
+        case text.type
+            when 'subtitle'
+                h5 #{text.value}
+            when 'quote'
+                blockquote #{text.value}
+            default
+                p #{text.value}
+        br
