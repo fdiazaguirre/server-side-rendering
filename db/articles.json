@@ -20,17 +20,3 @@
     "tech"
   ]
 }
-
-
-git add config/index.js
-git add db/
-git add lib/models/article/
-git add lib/models/cs/time-space-complexity/
-git add lib/models/soft-skills/
-git add resources/
-git add vendor/
-git add views/about.pug
-git add views/article.pug
-git add views/footer.pug
-git add views/header.pug
-git add views/home.pug
