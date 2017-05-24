@@ -12,6 +12,7 @@ h5 #{article.subtitle}
                 p #{text.value}
         br
     - var sources = article.sources || []
+    // Show only when is not empty!
     p sources:
     each link in sources
         a(href='/' + link) #{link}
