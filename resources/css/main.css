@@ -38,7 +38,6 @@ footer,
 #SHOW_BOTTOM,
 footer,
 .show-bottom {
-  position: absolute;
   bottom: 0;
 }
 
