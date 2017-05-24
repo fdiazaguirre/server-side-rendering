@@ -8,6 +8,8 @@ h5 #{article.subtitle}
                 h5 #{text.value}
             when 'quote'
                 blockquote #{text.value}
+            when 'link'
+                a(href=#{text.value})
             default
                 p #{text.value}
         br
