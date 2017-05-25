@@ -1,6 +1,5 @@
 (function () {
   'use strict';
-  console.log('env->' + process.env.PORT);
 
   if (process.env.NODE_ENV === 'production') {
     module.exports = {
@@ -10,7 +9,10 @@
     };
   } else {
     module.exports = require('./dev.json');
+    process.env.NODE_ENV = 'dev';
   }
+
+  console.log('env->' + process.env.NODE_ENV);
 
 })();
 

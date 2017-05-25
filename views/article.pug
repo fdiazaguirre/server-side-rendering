@@ -1,19 +1,25 @@
 // Iterate over articles create
-h3 #{article.title}
-h5 #{article.subtitle}
+h2 #{article.title}
+h3 #{article.subtitle}
     - var arr = article.content || []
     each text in arr
         case text.type
             when 'subtitle'
-                h5 #{text.value}
+                h4 #{text.value}
             when 'quote'
                 blockquote #{text.value}
             default
                 p #{text.value}
         br
+    - var images = article.images || []
+    if images.length > 0
+        each img in images
+            figure
+                img(class='margin-auto' src=img.src alt=img.alt)
+                figcaption(class='margin-auto' class='margin-left-45') #{img.caption}
     - var sources = article.sources || []
-    // Show only when is not empty!
-    p sources:
-    each link in sources
-        a(href='/' + link) #{link}
-        br
+    if sources.length > 0
+        p sources:
+        each link in sources
+            a(href='/' + link) #{link}
+            br
