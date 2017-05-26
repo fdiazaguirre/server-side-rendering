@@ -19,9 +19,9 @@ body,
 /* top | right | bottom | left
 margin: 2px 1em 0 auto;*/
 
-#CENTER-MIDDLE,
+#MARGIN-AUTO,
 nav,
-.center-middle {
+.margin-auto {
   margin: auto;
   width: 70%;
 }
@@ -144,9 +144,29 @@ footer,
   margin-right: auto
 }
 
-.margin-left-45 {
-  margin-left: 45%;
+.margin-left-50 {
+  margin-left: 50%;
 }
+
+
+.margin-left-35 {
+  margin-left: 35%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+figure {
+  display: inline-block;
+}
+figure img {
+  vertical-align: top;
+}
+figure figcaption {
+  text-align: center;
+}
+
 
 /*Sub menu settings are too specific to reuse*/
 .nested-menu {
