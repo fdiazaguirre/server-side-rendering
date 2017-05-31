@@ -21,8 +21,17 @@ margin: 2px 1em 0 auto;*/
 
 #MARGIN-AUTO,
 nav,
+figure img,
+figure caption,
+video,
 .margin-auto {
   margin: auto;
+}
+
+#WIDTH-70,
+nav,
+figure img,
+.width-70 {
   width: 70%;
 }
 
@@ -69,8 +78,24 @@ footer,
 
 #DISPLAY-INLINE-BLOCK,
 .main-option,
+figure,
+blockquote,
 .display-inline-block {
   display: inline-block;
+}
+
+#DISPLAY-BLOCK,
+figure img,
+figure caption,
+video,
+.display-block {
+  display: block;
+}
+
+#DISPLAY-INLINE,
+blockquote p,
+.display-inline {
+  display: inline;
 }
 
 #NO-DECORATION,
@@ -119,6 +144,7 @@ footer,
 
 #TEXT-ALIGN-CENTER,
 .main-option,
+figure figcaption,
 .text-align-center {
   text-align: center;
 }
@@ -137,38 +163,13 @@ footer,
   flex: 1 1 auto;
 }
 
-
-.margin-auto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-}
-
-.margin-left-50 {
-  margin-left: 50%;
-}
-
-
-.margin-left-35 {
-  margin-left: 35%;
-}
-
-.width-40 {
-  width: 40%;
-}
-
-figure {
-  display: inline-block;
-}
-figure img {
+#VERTICAL-ALIGN-TOP,
+figure img,
+.vertical-align-top {
   vertical-align: top;
 }
-figure figcaption {
-  text-align: center;
-}
 
-
-/*Sub menu settings are too specific to reuse*/
+/*Too specific to reuse*/
 .nested-menu {
   min-width: 15%; /* Set width of the dropdown */
   position: absolute;
@@ -220,8 +221,3 @@ blockquote:after {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-
-blockquote p {
-  display: inline;
-}
-

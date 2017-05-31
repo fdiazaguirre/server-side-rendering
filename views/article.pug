@@ -9,17 +9,21 @@ h3 #{article.subtitle}
             when 'quote'
                 blockquote #{text.value}
             default
-                p #{text.value}
+                p !{text.value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br/>')}
         br
     - var images = article.images || []
     if images.length > 0
         each img in images
             figure
-                img(class='margin-auto' src=img.src alt=img.alt)
-                figcaption(class='margin-auto' class='margin-left-45') #{img.caption}
+                img(src=img.src alt=img.alt)
+                figcaption(class='margin-left-45') #{img.caption}
+    - var videos = article.videos || []
+    if videos.length > 0
+        each v in videos
+            video(src=`/videos/${v.src}` width="480" controls type="video/mp4")
     - var sources = article.sources || []
     if sources.length > 0
         p sources:
         each link in sources
-            a(href='/' + link) #{link}
+            a(href=link) #{link}
             br

@@ -50,8 +50,8 @@
         res.render('main', {article: _.find($articles, { 'title': 'Design'})});
       });
 
-      myRouter.get('/tech/async-sync', function (req, res) {
-        res.render('main', {article: _.find($articles, { 'title': 'Async vs Sync'})});
+      myRouter.get('/tech/dist-comp', function (req, res) {
+        res.render('main', {article: _.find($articles, { 'title': 'Distributed Computing'})});
       });
 
       myRouter.get('/tech/fwks', function (req, res) {
@@ -70,8 +70,8 @@
         res.render('main', {article: _.find($articles, { 'title': 'Soft Skills'})});
       });
 
-      myRouter.get('/soft/manifesto', function (req, res) {
-        res.render('main', {article: _.find($articles, { 'title': 'Agile Manifesto'})});
+      myRouter.get('/soft/agile', function (req, res) {
+        res.render('main', {article: _.find($articles, { 'title': 'Agile'})});
       });
 
       myRouter.get('/soft/practices', function (req, res) {
