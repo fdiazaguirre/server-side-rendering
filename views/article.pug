@@ -20,7 +20,7 @@ h3 #{article.subtitle}
     - var videos = article.videos || []
     if videos.length > 0
         each v in videos
-            video(src=`/videos/${v.src}` width="480" controls type="video/mp4")
+            iframe(src=`${v.src}` width="560" height="315" frameborder="0" allowfullscreen)
     - var sources = article.sources || []
     if sources.length > 0
         p sources:
