@@ -1,4 +1,0 @@
-{
-	"host": "http://localhost:3000",
-	"dbURI": "<your mongoLab.com database URI>"
-}
